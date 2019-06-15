@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Smart Box</string>
+    <string name="device_s_name">Nome do dispositivo</string>
+    <string name="wifi_s_name">Nome do WiFi</string>
+    <string name="wifi_s_password">Senha do WiFi</string>
+    <string name="save">Salvar</string>
+    <string name="device">Dispositivo</string>
+    <string name="wifi">WiFi</string>
+    <string name="invalid_box_name">Nome de caixa inválido</string>
+    <string name="invalid_wifi_name">Nome do WiFi inválido</string>
+    <string name="waiting_for_box_connection">Esperando conexão da box</string>
+    <string name="box_configurated_test_it">Box configurada, reinicie-a para utilizar as novas configurações</string>
+    <string name="remaining">Restam</string>
+    <string name="next_pill">Prox. dose</string>
+    <string name="last_pill">Ultima dose</string>
+    <string name="buy_more">Comprar mais até dia</string>
+    <string name="my_boxes">Minhas caixas</string>
+    <string name="box_configuration">Configuração de caixa</string>
+    <string name="pull_down_to_update">Puxe para baixo para atualizar</string>
+    <string name="to_configure_the_box">Para configurar a caixa</string>
+    <string name="fisrt_step_configuration_box">1 - Ligue o roteador do smarthphone</string>
+    <string name="second_step_configuration_box">2 - Configure o nome da rede como:</string>
+    <string name="ready_start_config">Tudo pronto, configurar</string>
+    <string name="third_step_config_box">3 - Configure a senha da rede como:</string>
+    <string name="fourth_step_config_box">4 - Clique no botão abaixo para configurar</string>
+    <string name="fifth_step_config_box">5 - Inicie a caixa e a aguarde conectar</string>
+    <string name="sixth_step_config_box">6 - Preencha as informações pedidas</string>
+    <string name="seventh_step_config_box">7 - Clique em \'SALVAR\'</string>
+    <string name="eighnth_step_config_box">8 - Reinicie a caixa</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="project">Projeto</string>
+    <string name="resume">Resumo do projeto</string>
+    <string name="resume_project">Este projeto visa auxiliar pessoas com problemas relacionados a memória que
+        precisam tomar medicamentos regularmente.</string>
+    <string name="group_component">Integrante</string>
+    <string name="box_detail">Detalhe da Caixa</string>
+    <string name="info">Informações</string>
+    <string name="next_alarms">Próximos alarmes</string>
+    <string name="fail_to_update_devices">Falha em atualizar dispositivos</string>
+    <string name="fail_to_update_alarms">Falha ao atualizar alarmes</string>
+    <string name="fail_to_update_device_detail">Falha ao carregar detalhes da caixa</string>
+    <string name="pills_remaining">Comprimidos restantes</string>
+    <string name="next_pill_detail">Próxima dose</string>
+    <string name="last_pill_taken">Ultima dose tomada</string>
+    <string name="buy_more_detail">Comprar mais compimidos até</string>
+    <string name="alarms">Alarmes</string>
+</resources>

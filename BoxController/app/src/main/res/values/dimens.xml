@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_field">45dp</dimen>
+    <dimen name="normal_text_size">15sp</dimen>
+    <dimen name="big_text_size">20sp</dimen>
+    <dimen name="snack_bar_height">20dp</dimen>
+    <dimen name="my_device_item_margin">5dp</dimen>
+    <dimen name="group_component_item_margin">10dp</dimen>
+    <dimen name="large_text_size">30sp</dimen>
+    <dimen name="huge_text_size">40sp</dimen>
+</resources>

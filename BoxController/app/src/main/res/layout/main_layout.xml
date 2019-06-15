@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+                name="layoutData"
+                type="com.example.boxcontroller.view.viewmodel.LayoutData"/>
+        <variable name="user"
+                  type="com.example.boxcontroller.view.viewmodel.User"/>
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinator_layout"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/my_custom_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:titleTextColor="#FFFFFF"
+                    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"
+                    app:title="@{layoutData.toolbarTitle}"
+                    app:navigationIcon="@{layoutData.toolbarIcon}"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.drawerlayout.widget.DrawerLayout
+                android:id="@+id/drawer_layout"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:openDrawer="start">
+
+            <FrameLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            <com.google.android.material.navigation.NavigationView
+                    android:id="@+id/nav_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    app:headerLayout="@layout/nav_header"
+                    app:menu="@menu/nav_view_item">
+
+                <include
+                        layout="@layout/nav_header"
+                        app:user="@{user}" />
+
+            </com.google.android.material.navigation.NavigationView>
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3498db</color>
+    <color name="colorPrimaryDark">#2980b9</color>
+    <color name="colorAccent">#e67e22</color>
+    <color name="item_my_device">#ffffff</color>
+    <color name="card_title_background">#3498db</color>
+    <color name="info_card_background">#ffffff</color>
+    <color name="card_title_color">#ffffff</color>
+    <color name="start_gradient_background">#F7FAFA</color>
+    <color name="end_gradient_background">#EDEEF0</color>
+    <color name="header_shaddow_collor">#000000</color>
+</resources>

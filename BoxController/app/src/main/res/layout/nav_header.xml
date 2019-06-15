@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="user"
+                  type="com.example.boxcontroller.view.viewmodel.User"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:foreground="?attr/selectableItemBackgroundBorderless"
+                  android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                  android:clickable="true"
+                  android:focusable="true"
+                  android:gravity="bottom">
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/nav_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintDimensionRatio="H,16:9"
+                android:src="@drawable/medicine"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:alpha=".3"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="@color/header_shaddow_collor"
+                app:layout_constraintTop_toBottomOf="@id/nav_icon"
+                app:layout_constraintBottom_toBottomOf="parent" >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/user_image_header"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:tint="#fff"
+                    android:alpha="1"
+                    android:src="@drawable/user"
+                    app:layout_constraintDimensionRatio="V,1:1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/user_name_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:textSize="@dimen/normal_text_size"
+                    android:textStyle="bold"
+                    android:tint="#ffffff"
+                    android:textColor="#ffffff"
+                    android:alpha="1"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    app:layout_constraintHeight_percent=".5"
+                    app:layout_constraintStart_toEndOf="@id/user_image_header"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    android:text="@{user.userName}" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/user_email_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:paddingStart="10dp"
+                    android:paddingLeft="10dp"
+                    android:tint="#ffffff"
+                    android:textColor="#ffffff"
+                    android:text="@{user.userEmail}"
+                    android:textSize="@dimen/normal_text_size"
+                    android:alpha="1"
+                    app:layout_constraintHeight_percent=".5"
+                    app:layout_constraintStart_toEndOf="@id/user_image_header"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

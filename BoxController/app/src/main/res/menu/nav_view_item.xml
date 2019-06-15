@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/home"
+                android:icon="@drawable/ic_home"
+                android:title="Tela Principal"/>
+        <item
+                android:id="@+id/myBoxes"
+                android:icon="@drawable/box_check"
+                android:title="Minhas Caixas"/>
+        <item
+                android:id="@+id/config"
+                android:icon="@drawable/ic_wrench"
+                android:title="Configurações"/>
+        <item
+                android:id="@+id/info"
+                android:icon="@drawable/ic_info"
+                android:title="Informações"/>
+    </group>
+
+</menu>

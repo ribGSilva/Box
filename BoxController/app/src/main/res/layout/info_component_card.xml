@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/info_card_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:layout_marginVertical="@dimen/group_component_item_margin">
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_component"
+            android:text="@string/group_component"
+            android:textSize="@dimen/normal_text_size"
+            android:paddingStart="25dp"
+            android:paddingLeft="25dp"
+            android:paddingVertical="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/info_card_top_background"
+            android:textColor="@color/card_title_color"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_component"
+            android:textSize="@dimen/big_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingVertical="6dp"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/image_component"
+            app:layout_constraintTop_toBottomOf="@id/tv_component"
+            app:layout_constraintHorizontal_bias="0"
+            android:paddingLeft="40dp"
+            android:paddingStart="40dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_component"
+            android:layout_marginTop="5dp"
+            android:paddingVertical="6dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txt_component"
+            app:layout_constraintTop_toBottomOf="@id/tv_component"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_ra"
+            android:textSize="@dimen/normal_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_component"
+            app:layout_constraintHorizontal_bias="0"
+            android:paddingLeft="40dp"
+            android:paddingStart="40dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_contact"
+            android:textSize="@dimen/normal_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_ra"
+            app:layout_constraintHorizontal_bias="0"
+            android:autoLink="phone"
+            android:paddingLeft="40dp"
+            android:paddingStart="40dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_email"
+            android:textSize="@dimen/normal_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/colorAccent"
+            android:background="@drawable/info_card_bottom_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_contact"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            android:autoLink="web|email"
+            android:paddingLeft="40dp"
+            android:paddingStart="40dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
